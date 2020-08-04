@@ -67,7 +67,7 @@ body{
     background-size: fit;
     background-position: center;
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    
 }
 #about > h1{
     position: relative;
@@ -171,6 +171,9 @@ body{
     left:4em;
 }
 
+#connect2{
+    display: none;
+}
 
 #footer{
     display:flex;
