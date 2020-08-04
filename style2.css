@@ -56,7 +56,7 @@
     display: inline-block;
     position: fixed;
     top:80vh;
-    right:6vw;
+    right:-1vw;
     z-index:999;
 }
 #connect2 img{
