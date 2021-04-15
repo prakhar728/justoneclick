@@ -1,59 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JUST ONE CLICK</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" media=" screen and (max-width:500px)" href="style2.css">
-    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
-</head>
-
-<body>
-    <div id="sec1">
-        <nav id="navbar">
-            <a class="navigations" href="#sec1">HOME</a>
-            <a class="navigations" href="#about">ABOUT</a>
-            <a class="navigations" href="#gallery">GALLERY</a>
-            <a class="navigations" href="#conect">CONNECT</a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="CSS/style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Train+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Serif:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Just One Click</title>
+  </head>
+  <body>
+    <div class="wholeWindow">
+      <div class="backgroundImageContainer"></div>
+      <header>
+        <div class="title">
+          J<span id="logos1">UST</span> O<span id="logos2">NE</span> C<span
+            id="logos3"
+            >LICK</span
+          >
+        </div>
+      </header>
+      <div class="floatingContainer">
+        <nav>
+          <ul class="navBarTable">
+            <li class="navBarLinks"><a href="#" class="navLinks">HOME</a></li>
+            <li class="navBarLinks">
+              <a href="#" class="navLinks">GALLERY</a>
+            </li>
+            <li class="navBarLinks">
+              <a href="#" class="navLinks">CONTACT</a>
+            </li>
+          </ul>
         </nav>
-        <h3>All it takes is</h3>
-        <h1>Just One Click</h1>
-    </div>
-    <div id="about">
-        <h1>ABOUT US</h1>
-        <img src="about-to-attack-wolf (Copy).jpg" alt="">
-        <div id="data">
-            <p> Photography is seeing the world from a different perspective, a more beautiful and amazing one. </p>
-            <br>
-            <p id="hide"> We capture moments through our camera for the one second when nobody looks the statue of
-                libery might move. <span>:)</span></p>
+        <div id="catchPhrase">
+          <div class="phrase">
+            Photography is seeing the world from a different perspective, <br /> a more
+            beautiful and amazing one.
+          </div>
         </div>
-    </div>
-    <div id="gallery">
-        <h1> GALLERY</h1>
-        <div id="gallery1">
-            <div><a href="img1.jpg"><img src="img1 (Copy).JPG"> </a></div>
-            <div><a href="img2.jpg"><img src="img2 (Copy).jpg" alt=""></a></div>
-            <div><a href="img3.jpg"><img src="img3 (Copy).jpg" alt=""></a></div>
-            <div> <a href="img4.jpg"><img src="img4 (Copy).jpg" alt=""></a></div>
-            <div><a href="img5.jpg"><img src="img5 (Copy).jpg" alt=""></a></div>
-            <div><a href="img6.jpg"><img src="img6 (Copy).jpg" alt=""></a></div>
+        <div class="imageShowcase">
+          <div class="imgContainer">
+            
+          </div>
         </div>
+      </div>
+      <footer></footer>
     </div>
-    <div class="connect" id="connect">
-        <span> Connect with Us:</span>
-        <img src="insta1.png" alt="instagram">
-        <a href="https://instagram.com/_just.one.click_?igshid=1nvi2emah277t">Just One Click</a>
-    </div>
-    <div id="connect2" title="connect with us"> <a href="https://instagram.com/_just.one.click_?igshid=1nvi2emah277t"><img src="insta1.png" alt="instagram"></a></div>
-    <div class="footer">
-        <div id="footer">
-            <p>&copy;2020 Just One Click</p>
-            <p>Made by Pakhar Ojha</p>
-        </div>
-    </div>
-</body>
 
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.js"
+      integrity="sha512-WOGzh5DN1jJyuNbdawHVXe+xO2XI1V1wl1MF8a7CRR+b/r11VW8gAyLgBKmAT+YUcAyJI6ZhPe8XMkOR5bG8cQ=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollTrigger.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+    <script src="./js/app.js"></script>
+  </body>
 </html>

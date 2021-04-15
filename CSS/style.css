@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding:0;
+}
+body{
+    overflow-x:hidden;
+    overflow-y:hidden;
+}
+.backgroundImageContainer{
+ background: url("../images/CSS/background.jpg") ;
+ background-position: center;
+ background-size: cover;
+ width:100vw;
+ height:200vh;
+ filter:blur(2px);
+ z-index: -1;
+ position:absolute;
+}
+.wholeWindow{
+    height:110vh;
+    overflow-y: scroll;
+}
+.wholeWindow::-webkit-scrollbar{
+    display: none;
+}
+
+header{
+ width:100%;
+ display: flex;
+ justify-content: center;
+ position: relative;
+ margin-top:17%;
+ margin-bottom:5%;
+}
+.title{
+text-align: center;
+font-size:5rem;
+background: #b8b2a665;
+padding:2px 4px;
+padding-right: 8px;
+font-family: 'PT Serif', serif;
+color:#F5F5F5; 
+border-radius:10px;
+text-shadow: -1px -1px black;
+margin-top:2%;
+}
+#logos1{
+    display: inline-block;
+    width:0;
+    opacity:0;
+}
+#logos2{
+    display: inline-block;
+    width:0;
+    opacity:0;
+}
+#logos3{
+    display: inline-block;
+    width:0;
+    opacity:0;
+}
+
+.floatingContainer{
+    border:2px solid black;
+    width:60vw;
+    height:90vh;
+    background-image: linear-gradient(to top, #fad0c4 0%, #ffd1ff 100%);
+    position: relative;
+    margin:5% auto;
+    
+}
+nav{
+    width:100%;
+    padding-bottom: 4%;
+}
+.navBarTable{
+    list-style-type: none;
+    display:flex;
+    flex-flow: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    padding:0 2%;
+    
+}
+.navBarLinks{
+    padding:1rem 3rem;
+    font-weight:40px;
+}
+.navLinks{
+    position:relative;
+}
+.navLinks::before{
+    content:"";
+    position:absolute;
+    width:0;
+    height:2px;
+    bottom:0;
+    left:0;
+    background-color:#FFF;
+    visibility:hidden;
+    transition:all 0.6s ease-in-out;
+}
+.navLinks:hover::before{
+visibility:visible;
+width:100%;
+}
+.navBarLinks a{
+    text-decoration: none;
+    color:white;
+    font-weight:40px;
+    font-size: 2vw;
+    -webkit-text-stroke: 0.5px black;
+}
+#catchPhrase{
+    width:100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.phrase{
+    font-family: 'PT Serif', serif;
+    font-size:2rem;
+    border-top:2px solid black;
+    padding:20% 2%;
+    margin:auto;
+    color:#373737;
+    opacity:0;
+}
+footer{
+ position: relative;
+ background-color: black;
+ width:100vw;
+ height:3rem;
+ align-self: flex-end;
+}
