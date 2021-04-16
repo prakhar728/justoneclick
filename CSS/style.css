@@ -63,7 +63,7 @@ margin-top:2%;
 .floatingContainer{
     border:2px solid black;
     width:60vw;
-    height:90vh;
+    height:max-content;
     background-image: linear-gradient(to top, #fad0c4 0%, #ffd1ff 100%);
     position: relative;
     margin:5% auto;
@@ -129,6 +129,25 @@ width:100%;
     margin:auto;
     color:#373737;
     opacity:0;
+}
+.imageShowcase{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    }
+    
+.imgContainer{
+ display: flex;
+ flex-flow: column;
+ justify-content: space-around;
+ 
+}
+.imgContainer img{
+    width:40vh;
+    height:auto;
+    margin-bottom:5vh;
+    box-shadow: 0 14px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 footer{
  position: relative;
