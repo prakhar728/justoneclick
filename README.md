@@ -15,3 +15,8 @@ It's also live [here](https://justoneclick.netlify.app/).
 2. Optimize size and scaling of images.
 3. Add a full Gallery 
 4. Add a contact form
+
+## Steps to run it on your local machine
+
+1. Download the ZIP file or pull the repository in your local machine.
+2. Open the index.html.
