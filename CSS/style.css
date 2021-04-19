@@ -17,7 +17,7 @@ body{
  position:absolute;
 }
 .wholeWindow{
-    height:110vh;
+    height:100vh;
     overflow-y: scroll;
 }
 .wholeWindow::-webkit-scrollbar{
@@ -87,6 +87,7 @@ nav{
 .navBarLinks{
     padding:1rem 3rem;
     font-weight:40px;
+    
 }
 .navLinks{
     position:relative;
@@ -110,7 +111,7 @@ width:100%;
     text-decoration: none;
     color:white;
     font-weight:40px;
-    font-size: 2vw;
+    font-size: 2.5vw;
     -webkit-text-stroke: 0.5px black;
 }
 #catchPhrase{
@@ -150,9 +151,33 @@ width:100%;
     box-shadow: 0 14px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 footer{
- position: relative;
  background-color: black;
- width:100vw;
- height:3rem;
- align-self: flex-end;
+ width:100%;
+ padding-bottom:5vh;
+ padding-top:5vh;
+ display: flex;
+align-items: center;
+justify-content: center;
+}
+footer i{
+    background:rgba(255, 255, 255, 0);
+    font-size:50px;
+    width:max-content;
+    height:auto;
+    text-align: center;
+    color: red;
+    
+}
+footer i:hover{
+    background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+    -webkit-background-clip: text;
+    background-clip:text;
+    color:transparent;
+}
+footer p{
+    color:white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left:2vw;
 }

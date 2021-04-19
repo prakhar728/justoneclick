@@ -107,22 +107,81 @@ t1.play();
     }
   );
 
-  const t4 = new timeline({paused:true,
+  const t4 = gsap.timeline({paused:true,
     scrollTrigger:{
       scroller:".wholeWindow",
-      trigger:".imgContainer",
-      start:"top 40%",
-      end:"40% 30%",
+      trigger:"#img1",
+      start:"top center",
+      end:"bottom center",
       toggleActions:"play none reverse none",
      
     }
   });
 
-  t4.fromTo(".imgContainer",1,{
-    autoAlpha:0,
+  t4.fromTo("#img1",1,{
+    opacity:0,
+    x:-80,
+    ease:Power2.easeOut,
   },{
-    autoAlpha:1,
+    x:0,
+    opacity:1
+  });
 
-  })
+  const t5 = gsap.timeline({paused:true,
+    scrollTrigger:{
+      scroller:".wholeWindow",
+      trigger:"#img2",
+      start:"top center",
+      end:"bottom center",
+      toggleActions:"play none reverse none",
+    
+    }
+  });
+  t5.fromTo("#img2",1,{
+    opacity:0,
+    y:-80,
+    ease:Power2.easeOut,
+  },{y:0,
+    opacity:1
+  });
+  const t6 = gsap.timeline({paused:true,
+    scrollTrigger:{
+      scroller:".wholeWindow",
+      trigger:"#img3",
+      start:"top center",
+      end:"bottom center",
+      toggleActions:"play none reverse none",
+    
+    }
+  });
+  t6.fromTo("#img3",1,{
+    opacity:0,
+    y:80,
+    ease:Power2.easeOut,
+  },{
+    y:0,
+    opacity:1
+  });
+  const t7 = gsap.timeline({paused:true,
+    scrollTrigger:{
+      scroller:".wholeWindow",
+      trigger:"#img4",
+      start:"top center",
+      end:"10% center",
+      toggleActions:"play none reverse none",
+     
+    }
+  });
+  t7.fromTo("#img4",1,{
+    opacity:0,
+    x:60,
+    y:40,
+    ease:Power2.easeOut,
+  },{
+    x:0,
+    y:0,
+    opacity:1
+  });
+  
 
  
