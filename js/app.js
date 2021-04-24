@@ -1,5 +1,76 @@
 
+// Making the expanding Logo
+if(screen.width<600){
+  const t1 = gsap.timeline({paused:true
+  });
+  t1.fromTo(
+    "#logos1",
+    1,
+    {
+      width: "0",
+      autoAlpha:0,
+      ease: Power2.easeOut,
+    },
+    {
+      width: "12vw",
+      autoAlpha:1,
+    },"+=1"
+  )
+    .fromTo(
+      "#logos2",
+      1,
+      {
+        width: "0",
+        autoAlpha:0,
+        ease: Power2.easeOut,
+      },
+      {
+        width: "8.5vw",
+        autoAlpha:1,
+      },"-=1"
+    )
+    .fromTo(
+      "#logos3",
+      1,
+      {
+        width: "0",
+        autoAlpha: 0,
+        ease: Power2.easeOut,
+      },
+      {
+        width: "15vw",
+        autoAlpha: 1,
+      },
+      "-=1"
+    );
+  t1.play();
+ 
+  const t3 = gsap.timeline({paused:true,
+    scrollTrigger:{
+      scroller:".wholeWindow",
+      trigger:".phrase",
+      start:"top 20%",
+      end:"bottom 10%",
+      toggleActions:"play none reverse none",
+      
+    }
+    });
+    t3.fromTo(
+      ".phrase",
+      2,
+      {
+        opacity: 0,
+        ease: Power2.easeOut,
+      },
+      {
+        opacity: 1,
+      }
+    );
 
+
+
+}
+else{
 const t1 = gsap.timeline({paused:true
 });
 t1.fromTo(
@@ -11,7 +82,7 @@ t1.fromTo(
     ease: Power2.easeOut,
   },
   {
-    width: "140",
+    width: "9vw",
     autoAlpha:1,
   },"+=1"
 )
@@ -24,7 +95,7 @@ t1.fromTo(
       ease: Power2.easeOut,
     },
     {
-      width: "100",
+      width: "6.5vw",
       autoAlpha:1,
     },"-=1"
   )
@@ -37,62 +108,57 @@ t1.fromTo(
       ease: Power2.easeOut,
     },
     {
-      width: "190",
+      width: "12vw",
       autoAlpha: 1,
     },
     "-=1"
   );
 t1.play();
+const t2 = gsap.timeline({paused:true,
+  scrollTrigger:{
+    trigger:".title",
+    scroller:".wholeWindow",
+    start:"top 25%",
+    end:"bottom 15%",
+    toggleActions:"play complete reverse reverse",
+  }});
+t2.fromTo(".title",1,{
+ fontSize:"5vw",
+ ease:Power2.easeOut,
+},{
+fontSize: "3vw",
+})
+.to(
+"#logos1",
+1,{autoAlpha:1,
+   width: '95',
+},
+"-=0.9"
+)
+.to(
+"#logos2",
+1,
+{
+  width: '60',
+},
+"-=0.9"
+)
+.to(
+"#logos3",
+0.7, {
+  width: '106',
+},
+"-=1.15"
+);
 
-  const t2 = gsap.timeline({paused:true,
-    scrollTrigger:{
-      trigger:".title",
-      scroller:".wholeWindow",
-      start:"top 25%",
-      end:"bottom 15%",
-      toggleActions:"play complete reverse reverse",
-    }});
-  t2.fromTo(".title",1,{
-       fontSize:"5rem",
-       ease:Power2.easeOut,
-  },{
-    fontSize: "3rem",
-   })
-    .to(
-      "#logos1",
-      1,{autoAlpha:1,
-         width: '95',
-    },
-      "-=0.9"
-   )
-   .to(
-      "#logos2",
-      1,
-      {
-        width: '60',
-     },
-     "-=0.9"
-    )
-    .to(
-    "#logos3",
-      0.7, {
-        width: '106',
-      },
-      "-=1.15"
-    );
-    
-
-
-
-
-  const t3 = gsap.timeline({paused:true,
+const t3 = gsap.timeline({paused:true,
   scrollTrigger:{
     scroller:".wholeWindow",
     trigger:".phrase",
     start:"top 40%",
     end:"40% 30%",
     toggleActions:"play none reverse none",
-   
+    
   }
   });
   t3.fromTo(
@@ -106,6 +172,13 @@ t1.play();
       opacity: 1,
     }
   );
+  }
+// Making it shrink with the scroll trigger
+ 
+
+
+
+  
 
   const t4 = gsap.timeline({paused:true,
     scrollTrigger:{

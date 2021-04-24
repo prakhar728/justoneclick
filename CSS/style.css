@@ -34,7 +34,7 @@ header{
 }
 .title{
 text-align: center;
-font-size:5rem;
+font-size:4vw;
 background: #b8b2a665;
 padding:2px 4px;
 padding-right: 8px;
@@ -72,6 +72,7 @@ margin-top:2%;
 nav{
     width:100%;
     padding-bottom: 4%;
+    
 }
 .navBarTable{
     list-style-type: none;
@@ -82,12 +83,10 @@ nav{
     align-items: center;
     align-content: center;
     padding:0 2%;
-    
 }
 .navBarLinks{
-    padding:1rem 3rem;
+    padding:3vh 3.5vw;
     font-weight:40px;
-    
 }
 .navLinks{
     position:relative;
