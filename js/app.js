@@ -71,7 +71,11 @@ if(screen.width<600){
 
 }
 else{
-const t1 = gsap.timeline({paused:true
+const t1 = gsap.timeline({paused:true,
+  scrollTrigger:{
+    trigger:"header",
+    scroller:".wholeWindow",
+  }
 });
 t1.fromTo(
   "#logos1",

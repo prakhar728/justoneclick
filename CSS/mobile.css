@@ -10,3 +10,36 @@
 .phrase{
     font-size:4vw;
 }
+
+.galleryContainer{
+    display:flex;
+    justify-content: center;
+flex-flow: column;
+align-items: center;
+align-content: space-between;
+border-top:2px solid black;
+padding:4vh 0;
+margin:0 1vw;
+}
+.containerItem{
+   width:50vw;
+   background-color: rgba(243, 243, 243, 0.534);
+   padding:2vh 4vw;
+   border-radius:10px;
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+   margin:4vh 0;
+}
+
+.containerItem img{
+    width:100%;
+    border-radius:10px;
+}
+.containerItem p{
+    width:100%;
+    font-size: 3vw;
+    text-align: center;
+    padding:1vh 0;
+    font-style: italic;
+    color:black;
+   
+}
