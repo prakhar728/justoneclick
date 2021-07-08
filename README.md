@@ -6,7 +6,7 @@ Yeah this website was more of a personal project to build a site to showcase som
 
 All the Animations and Scroll Triggers were made using the [GSAP-GreenSock](https://greensock.com/gsap/)
 
-The site needs a lot of work and I'll keep updating it.
+<p>The site needs a lot of work and I'll keep updating it.</p>
 
 It's also live [here](https://justoneclick.netlify.app/).
 
